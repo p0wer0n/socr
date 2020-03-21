@@ -11,6 +11,8 @@ setup(
     ],
     install_requires=[
         'Click',
+        'pyxdg',
+        'config'
     ],
     entry_points={
         'console_scripts': [
