@@ -22,11 +22,11 @@ Commands:
   
 # setup
   - install above requirements
-  - `pip3 install --user git+https://github.com/sentriz/socr.git`
+  - `pip3.7 install git+https://github.com/p0wer0n/socr.git`
   - `edit ~/.config/socr/config.py` (see example config)
   - `socr build` (run once per install) looks at all your screenshots, extracts the text, embeds the text, and builds the database
   - add `socr add <path to screenshot>` to [your screenshoting tool](https://github.com/sentriz/dotfiles/commit/57987138e4b09615b8237b6ac67e4d751dfbabb1)
-
+# TODO - Automator & Services setup on Macintosh
 # example usage
   - `socr search <text>` to see matching files
   - `feh $(socr search <text>)` with, for example, [feh](https://wiki.archlinux.org/index.php/Feh) to view all matching screenshots
@@ -36,6 +36,6 @@ Commands:
 ```python
 # ~/.config/socr/config.py
 
-SCREENSHOT_DIR="~/pictures/screenshots"
-SCREENSHOT_EXT="png"
+SCREENSHOT_DIR: "~/pictures/screenshots"
+SCREENSHOT_EXT: "png"
 ```
